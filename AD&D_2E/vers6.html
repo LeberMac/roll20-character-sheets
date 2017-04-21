@@ -1,0 +1,3188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2ECS</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="working-demo-6.css" media="screen" />
+<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body style="margin:0;">
+
+<div class="sheet-container">
+
+<div class="sheet-main"><strong>This would be the main info</strong><br>
+  <table width="600px">
+				<tr>
+					<td valign="top" align="right"><strong>First&nbsp;name:</strong></td><td valign="top"><input type="text" name="fname" style="width:150px;" class="sheet-input"></td><td>&nbsp;&nbsp;</td><td align="right" valign="top"><b>Last&nbsp;name:</b></td><td valign="top"><input type="text" name="fname" style="width:150px;"  class="sheet-input"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="right"><b>ID&nbsp;Number: </b></td><td valign="top"><input type="text" name="fname" size="35"  class="sheet-input"></td><td>&nbsp;&nbsp;</td><td align="right" valign="top"><b>Birthdate: </b></td><td valign="top"><input type="text" name="fname" size="35"  class="sheet-input"></td>
+				</tr>
+				<tr>
+					<td align="right" valign="top"><strong>Chosen&nbsp;Selections:</strong></td>
+					<td valign="top">
+					<input type="number" min="3" max="25" step="1" class="sheet-input" style="width:50px;"><br>
+<br>
+				&nbsp;
+					</td>
+					<td>&nbsp;&nbsp;</td><td align="right" valign="top"><strong>Selection&nbsp;List</strong></td><td>
+					<textarea style="width:200px; height:50px; resize:vertical;" class="sheet-input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea></td>
+				</tr>
+</table>
+</div>
+
+<label>
+    <input name="attr_expand" type="radio" value="10" class="sheet-hiddenradiobutton" checked="true" />
+    <div class="sheet-tab">TAB 1</div>
+    <label>
+        <input name="attr_expand" type="radio" value="20" class="sheet-hiddenradiobutton" />
+        <div class="sheet-tab">TAB 2</div>
+        <label>
+            <input name="attr_expand" type="radio" value="30" class="sheet-hiddenradiobutton" />
+            <div class="sheet-tab">TAB 3</div>
+            <label>
+                <input name="attr_expand" type="radio" value="40" class="sheet-hiddenradiobutton"/>
+                <div class="sheet-tab">TAB 4</div>
+                <label>
+                	<input name="attr_expand" type="radio" value="50" class="sheet-hiddenradiobutton"/>
+                	<div class="sheet-tab">TAB 5</div>
+                	<div class="sheet-tabcontent sheet-showcontent" style="height:600px;">
+                <div class="sheet-vertical-container">   
+				<label>
+                	<input name="attr_listitems" type="radio" value="910" class="sheet-vertical-hiddenradiobutton" SELECTED checked="true" />
+                	<div class="sheet-vertical-tab">
+                	A1&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0" width="100%">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input"></textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="920" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A2&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+            	
+            	<label>
+                	<input name="attr_listitems" type="radio" value="930" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A3&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+            	
+            	<label>
+                	<input name="attr_listitems" type="radio" value="940" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A4&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="950" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A5&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="960" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A6&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="970" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A7&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="980" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A8&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="990" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	A9&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+<br>
+            	<label>
+                	<input name="attr_listitems" type="radio" value="710" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P1&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="720" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P2&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="730" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P3&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+            	
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="740" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P4&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+            	
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="750" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P5&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="760" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P6&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="770" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	P7&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+<br>
+            	<label>
+                	<input name="attr_listitems" type="radio" value="510" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	X1&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>                	
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="520" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	X2&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>                	
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="530" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	X3&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>                	
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="540" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	X4&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>                	
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+            	<label>
+                	<input name="attr_listitems" type="radio" value="550" class="sheet-vertical-hiddenradiobutton"/>
+                	<div class="sheet-vertical-tab">
+                	X5&nbsp;
+                	<input type="text" name="attr_spcount" class="sheet-vertical-tab-input">
+                	</div>                	
+<div class="sheet-vertical-tabcontent sheet-vertical-showcontent">
+                    <div style="padding:4px;">
+                    <strong style="font-size:14px; padding-left:1px;">Title Goes Here</strong></div>
+                    <table border="0" cellpadding="1" cellspacing="0">
+						<tr>
+							<td width="300px"><strong>&nbsp;Items Destroyed</strong></td>
+							<td width="230px"><b>&nbsp;List of Items in Book</b></td>
+						</tr>
+               			<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+               				</td>
+           				  <td valign="top" rowspan="15">
+           					<textarea style="width:220px; height:362px; resize:none;" class="sheet-input">
+							  </textarea>
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+						</tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						<tr>
+               				<td>
+               					<input type="text" name="fname" style="width:190px;" class="sheet-input">&nbsp;
+               					<input type="button" value="Cash" class="sheet-button">&nbsp;
+								<input type="button" value="Init" class="sheet-button">&nbsp;
+           				  </td>
+
+					  </tr>
+						
+					</table>
+               	<div style="padding:4px;">
+					<b>&nbsp;Notes/Effects/Descriptions:</b><br>
+				  <textarea style="width:510px; height:90px; resize:none;" class="sheet-input"></textarea>
+					  </div>
+</div>
+
+            	</label>
+
+				</div>
+                  
+</div>
+            	</label>
+                <div class="sheet-tabcontent sheet-showcontent">
+                    tab 4 contents
+                </div>
+            </label>
+            <div class="sheet-tabcontent sheet-showcontent">
+                tab 3 contents
+            </div>
+        </label>
+        <div class="sheet-tabcontent sheet-showcontent">
+
+<b>Tab 2 Contents Go here</b><br>
+<table width="600px">
+				<tr>
+					<td valign="top" align="right"><b>First&nbsp;name:</b></td>
+					<td valign="top">
+						<input type="text" name="fname" style="width:150px;" class="sheet-input">
+						<input type="button" value="Hello" class="sheet-button">
+					</td>
+					<td>&nbsp;&nbsp;</td><td align="right" valign="top"><b>Last&nbsp;name:</b></td><td valign="top"><input type="text" name="fname" style="width:150px;"  class="sheet-input"></td>
+				</tr>
+				<tr>
+					<td valign="top" align="right"><b>ID&nbsp;Number: </b></td><td valign="top"><input type="text" name="fname" size="35"  class="sheet-input"></td><td>&nbsp;&nbsp;</td><td align="right" valign="top"><b>Birthdate: </b></td><td valign="top"><input type="text" name="fname" size="35"  class="sheet-input"></td>
+				</tr>
+				<tr>
+					<td align="right" valign="top"><strong>Chosen&nbsp;Selections:</strong></td>
+					<td valign="top">
+					<input type="number" min="3" max="25" step="1" class="sheet-input">
+					<br><br>
+				<select class="sheet-input" style="width:200px;">
+					<option value="1" selected>One</option>
+  					<option value="2">Two</option>
+  					<option value="37">Thirty-Seven</option>
+ 					<option value="100">One Hundred</option>
+				</select>
+				
+					</td>
+					<td>&nbsp;&nbsp;</td><td align="right" valign="top"><strong>Selection&nbsp;List</strong></td><td>
+					<textarea style="width:200px; height:50px; resize:vertical;" class="sheet-input">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea></td>
+				</tr>
+</table>	
+       
+        </div>
+    </label>
+    
+    <div class="sheet-tabcontent sheet-showcontent">
+    List of expandable items would go below, list them as needed.
+    <br>
+    <br>
+	  <input type="checkbox" class="sheet-expando-checkbox">
+		<div class="sheet-expando-header">&nbsp;&nbsp;
+		Item 1 Name: <input type="text" value="Item 1" name="Normal" class="sheet-input" style="width:100px;">&nbsp;&nbsp;
+		Info: <input type="text" value="25" name="Normal" class="sheet-input" style="width:20px;">&nbsp;&nbsp;
+		More Info: <input type="text" value="X23" name="Normal" class="sheet-input" style="width:30px;">&nbsp;&nbsp;
+		Info2: <input type="text" value="4" name="Normal" class="sheet-input" style="width:20px;">&nbsp;&nbsp;	
+		Info: <input type="text" value="B4" name="Normal" class="sheet-input" style="width:20px;">&nbsp;&nbsp;	
+		More Info2: <input type="text" value="ADV" name="Normal" class="sheet-input" style="width:20px;">&nbsp;&nbsp;	
+		</div>
+	    <div class="sheet-expando-div"><div style="padding: 6px 6px 6px 30px ;">	
+			Div goes here. <input type="text" class="sheet-input"> More information<br>
+			More data.
+		</div></div>
+     
+	  <input type="checkbox" class="sheet-expando-checkbox">
+		<div class="sheet-expando-header">&nbsp;&nbsp;
+		This is the second bar. Field Input: <input type="text" value="Item 2" name="Normal" class="sheet-input">
+		&nbsp;
+		<input type="button" value="This is a larger button inline with the textbox." class="sheet-button">
+		</div>
+	    <div class="sheet-expando-div"><div style="padding: 6px 6px 6px 30px ;">	
+			Div goes here. <input type="text" class="sheet-input"> More information<br>
+			More data.
+		</div></div>
+      <br>
+		<div class="sheet-custom-dropdown-wrapper">
+			<select class="sheet-custom-dropdown">
+				<option>Selection 1</option>
+				<option>Selection 2</option>
+				<option>Sel 3</option>
+				<option>Very Long Selection Number Cuatro (Which is 4 in Spanish)</option>
+				<option>Selection 5</option>
+				<option>Selection 6</option>
+				<option>7</option>
+			</select>
+		</div>
+		<br>
+		<input type="button" value="This is a larger button." class="sheet-button">
+		<br><br>
+		<div class="sheet-custom-dropdown-wrapper">
+			<select class="sheet-custom-dropdown">
+				<option>Selection 1</option>
+				<option>Selection 2</option>
+				<option>Sel 3</option>
+				<option>Very Long Selection Number Cuatro (Which is 4 in Spanish)</option>
+				<option>Selection 5</option>
+				<option>Selection 6</option>
+				<option>7</option>
+			</select>
+		</div>
+
+	</div>
+    
+</label>
+</div>
+	
+
+	
+</body>
+</html>
