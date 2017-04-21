@@ -1,0 +1,422 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v14/Zd2E9abXLFGSr9G3YK2MsD86pq2NkPzVgw_9lpT6RGI.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+.sheet-input, .sheet-textarea {
+		white-space: pre-wrap;
+		font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow,Arial,sans-serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-smooth: always;
+		font-size: 12px;
+		padding: 2px;
+		border-top: 1px solid #dddddd;
+		border-left: 1px solid #dddddd;
+		border-right: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+		background: #ffffff;
+}
+
+.sheet-vertical-tab-input {
+		-webkit-box-align: center;
+		vertical-align: middle;
+		display:inline;
+		font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow,Arial,sans-serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-smooth: always;
+		font-size: 12px;
+		text-align:center;
+		width: 16px;
+		height: 12px;
+		padding: 2px;
+		position:relative;
+		bottom: 2px;
+		border-top: 1px solid #dddddd;
+		border-left: 1px solid #dddddd;
+		border-right: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+		background: #ffffff;
+}
+
+.sheet-container{
+		font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow, Arial, sans-serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-smooth: always;
+		font-size: 12px;
+		font-weight: 100;
+	    color: black;
+        width: 646px;
+        float: none;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin: 0px auto;
+	    background: #dddddd;
+		border: solid thin #cccccc;
+	    border-bottom: none;
+		border-top: none;
+}
+
+.sheet-main {
+        display: block;
+        border: 1px;
+        margin: 0px auto;
+        width: 646px;
+        line-height: 120%;
+        padding: 10px;
+        color: black;
+        position: relative;
+		font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow, Arial, sans-serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-smooth: always;
+		font-size: 12px;
+        box-sizing: border-box;
+		margin-bottom: 3px;
+	    background: #fefefe;
+		background: linear-gradient(#ffffff, #dddddd);
+}
+
+.sheet-tabcontent,
+.sheet-hiddenradiobutton
+{
+    display: none;
+    padding: 10px;
+}
+
+.sheet-tabcontent ~ .sheet-showcontent
+{
+    display: none;
+    padding: 10px;
+}
+
+.sheet-hiddenradiobutton:checked ~ .sheet-showcontent {
+    font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow, Arial, sans-serif;
+	font-size: 12px;
+	height:auto;
+	display: block;
+    border: solid thin #cccccc;
+	border-right: none;
+	border-top:none;
+    background-color: #efefef;
+    margin: 1px 0px 0px -1px;
+}
+
+.sheet-tab {
+    display: inline-block;
+    text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	font-kerning: auto;
+	letter-spacing: -1px;
+    margin: -1px;
+    padding: 1px; 
+    width: 125px;
+    height: 20px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border: solid thin #cccccc;
+    border-bottom: none;
+	background-color: #dddddd;
+	background: linear-gradient(#eeeeee, #cccccc);
+}
+
+.sheet-tab:hover {
+	color: #003333;
+	background-color: #99ccff;
+	background: linear-gradient(#99ccff, #cccccc);
+}
+
+.sheet-hiddenradiobutton:checked ~ .sheet-tab
+{
+	background-color: #efefef;
+	background: linear-gradient(#ffffff, #efefef);
+}
+
+.sheet-hiddenradiobutton:checked ~ .sheet-tab:hover
+{
+	color: #003333;
+	background-color: #efefef;
+	background: linear-gradient(#99ccff, #efefef);
+}
+
+.sheet-button {
+	height: 21px;
+	font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow, Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: always;
+	font-weight: bold;
+	font-size: 12px;
+	color: #000000;
+    border: solid thin #cccccc;
+	border-radius: 2px;
+	background-color: #dddddd;
+	background: linear-gradient(#eeeeee, #cccccc);
+}
+
+.sheet-button:hover {
+	color: #003333;
+	background-color: #99ccff;
+    background: linear-gradient(#99ccff, #cccccc);
+}
+
+.sheet-expando-checkbox {
+	opacity: 0;
+	position: absolute;
+	z-index: 3;
+	height: 20px;
+	width: 20px;
+}
+
+.sheet-input, .sheet-textarea {
+		font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow,Arial,sans-serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-smooth: always;
+		font-size: 12px;
+		padding: 2px;
+		border-top: 1px solid #dddddd;
+		border-left: 1px solid #dddddd;
+		border-right: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+		background: #ffffff;
+}
+
+.sheet-expando-checkbox:checked + .sheet-expando-header + .sheet-expando-div {
+    height: 75px;
+	background: #efefef;
+    background: linear-gradient(#cccccc, #f3f3f3 10%, #f3f3f3 93%, #dedede 100%);
+	padding: 0px;
+	z-index:1;
+}
+
+.sheet-expando-div {
+  width:600px; 
+  top: 0px;
+  position:relative; 
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  background: #efefef;
+  background: linear-gradient(#cccccc, #f3f3f3 10%, #f3f3f3 93%, #dedede 100%);
+  padding: 0px;
+  border-right: thin solid #f9f9f9;
+  border-left: thin solid #dedede;
+  z-index:1;
+}
+
+.sheet-expando-header {
+	width:594px; 
+	border-top: thin solid #fefefe;
+	border-bottom: thin solid #cccccc;
+	border-left: thin solid #f9f9f9;
+    border-right: thin solid #dedede;
+	font-size: 12px;
+	font-weight: bold;
+	background: #efefef;
+	padding: 3px 3px 3px 3px;
+	z-index:2;
+}
+
+.sheet-expando-checkbox +.sheet-expando-header:before {
+  content: "\f138"; 
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: relative;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: #aaaaaa;
+  z-index:2;
+}
+
+.sheet-expando-checkbox:hover +.sheet-expando-header:before {
+  color: #7abcff;
+}
+
+.sheet-expando-checkbox:checked +.sheet-expando-header:before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: relative;
+  font-size: 18px;
+  top: 2px;
+  left: 2px;
+  color: #7ABCFF;
+  z-index:2;
+}
+
+.sheet-expando-checkbox:checked +.sheet-expando-header {
+	border-top: thin solid #fefefe;
+	border-bottom: thin solid #bbbbbb;
+	background: #e3e3e3;
+}
+
+.sheet-custom-dropdown {
+	-webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+	-moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
+	color: #000000;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow,Arial,sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: always;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 20px 4px 24px;
+	cursor: pointer;
+	border-top: thin solid #fefefe;
+	border-bottom: thin solid #cccccc;
+	border-left: thin solid #f9f9f9;
+    border-right: thin solid #dedede;
+	background: #efefef;
+	background: linear-gradient(#fafafa, #dddddd);
+}
+
+.sheet-custom-dropdown option {
+	font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow,Arial,sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: always;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333333;
+	background: #eeeeee;
+	background-color: #eeeeee;
+}
+
+.sheet-custom-dropdown-wrapper {
+    position: relative;
+}
+
+.sheet-custom-dropdown-wrapper:after {
+    content: '\f13a';
+    font-family: FontAwesome;
+    display: inline-block;
+    position: absolute;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	font-size: 18px;
+	top: 4px;
+	left: 6px;
+	color: #aaaaaa;
+    pointer-events: none;
+}
+
+.sheet-custom-dropdown-wrapper:hover:after {
+    color:#7ABCFF;
+}
+
+
+
+.sheet-vertical-tabcontent,
+.sheet-vertical-hiddenradiobutton
+{
+    display: none;
+    padding: 4px;
+	
+}
+
+.sheet-vertical-hiddenradiobutton:checked ~ .sheet-vertical-showcontent {
+    font-family: 'Roboto Condensed', 'Arial Narrow', Arial Narrow, Arial, sans-serif;
+	position: absolute;
+	top: 0px;
+	width: 535px;
+	height: 560px;
+	font-size: 12px;
+	display: block;
+    border: solid thin #cccccc;
+    background-color: #efefef;
+    margin: 1px 0px 0px 79px;
+}
+
+.sheet-vertical-container{
+	position:absolute;
+	height: auto;
+	width: 630px;
+}
+
+.sheet-vertical-tab {
+    display: block;
+    text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	font-kerning: auto;
+	letter-spacing: -1px;
+    margin: 1px;
+    padding: 0px 3px 4px 3px;
+    width: 70px;
+    height: 18px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border: solid thin #cccccc;
+	background-color: #dddddd;
+	background: linear-gradient(90deg, #efefef 10%, #dddddd 93%, #cccccc 100%);
+	
+}
+
+.sheet-vertical-tab:hover {
+	color: #003333;
+	background-color: #99ccff;
+	background: linear-gradient(90deg, #99ccff 10%, #dddddd 93%, #cccccc 100%);
+}
+
+.sheet-vertical-hiddenradiobutton:checked ~ .sheet-vertical-tab
+{
+	z-index:3;
+	position: relative;
+	width: 72px;
+	right: 0px;
+	border-right: none;
+	background-color: #efefef;
+	background: linear-gradient(90deg, #ffffff, #efefef);
+}
+
+.sheet-vertical-hiddenradiobutton:checked ~ .sheet-vertical-tab:hover
+{
+	color: #003333;
+	background-color: #efefef;
+	background: linear-gradient(90deg, #99ccff, #efefef);
+}
+
+/* Universals - not sure if these will come across properly */
+select::-ms-expand {
+    display: none;
+}
+::-ms-clear {
+      display: none;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
